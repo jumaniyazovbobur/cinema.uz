@@ -1,0 +1,23 @@
+1)  1. Movie Actor
+		2. Actor
+		3. Sinema
+		4. ReviewImage
+		5. Comment (Adminka) AddComment
+
+2)  1. Login
+		2. Registration
+		3. Profile
+		4. Adminka, User
+
+3) Main page
+  Category
+	Slider
+	By Category
+	Gender / Country
+
+4) Search result,
+  search result page
+	actor,
+	category
+
+5) Movie, like , watch later.
