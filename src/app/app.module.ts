@@ -9,6 +9,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {AdminComponent} from "./admin-panel/admin/admin.component";
+import { RegistrationComponent } from './shared-component/registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {AdminComponent} from "./admin-panel/admin/admin.component";
     HomeComponent,
     LoginComponent,
     NotFoundComponent,
-    AdminComponent
+    AdminComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,
