@@ -5,6 +5,7 @@ import {HomeComponent} from "./user-panel/home/home.component";
 import {AdminComponent} from "./admin-panel/admin/admin.component";
 import {LoginComponent} from "./shared-component/login/login.component";
 import {NotFoundComponent} from "./shared-component/not-found/not-found.component";
+import {AppComponent} from "./app.component";
 
 const routes: Routes = [
   // {path: '', redirectTo: '/task', pathMatch: 'full'},

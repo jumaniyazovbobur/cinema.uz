@@ -61,3 +61,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js"
             ],
+
+## crypto-js
+    user only vertions
+    "@types/crypto-js": "^3.1.43",
+    "crypto-js": "^3.1.8",
+
+    npm install crypto-js --save
+    npm install @types/crypto-js --save  
+    "scripts": [
+       "node_modules/crypto-js/crypto-js.js"
+     ]

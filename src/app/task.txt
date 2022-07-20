@@ -1,0 +1,5 @@
+1. Registration - k-2
+2. Home  k-1
+3. Admin - (menu) - k2
+4. Admin - Actor - k3
+5. Admin - Category - k3

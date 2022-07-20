@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {LocalStorageSecurity} from "../../common/util/localStorageSecurity";
 
 @Component({
   selector: 'app-admin',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin.component.css']
 })
 export class AdminComponent implements OnInit {
+  public userDetail = '';
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+    const json = LocalStorageSecurity.getItem("userDetail");
+    if (json) {
+      const obj = JSON.parse(json);
+      this.userDetail = obj['name'] + ' ' + obj['surname'];
+    }
   }
 
 }
