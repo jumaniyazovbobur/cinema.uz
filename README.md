@@ -72,3 +72,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     "scripts": [
        "node_modules/crypto-js/crypto-js.js"
      ]
+
+
+# Install font awesome
+       ### https://fontawesome.com/
+       npm install --save-dev @fortawesome/fontawesome-free
+       "styles": ["node_modules/@fortawesome/fontawesome-free/css/all.css"],
+       "scripts": ["node_modules/@fortawesome/fontawesome-free/js/all.js"]
