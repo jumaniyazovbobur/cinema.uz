@@ -37,7 +37,7 @@ body, h1, h2, h3, h4, h5 {
   text-decoration: none;
   color: gray;
   font-family: sans-serif;
-  padding: 10px;
+  padding: 25px;
   display: inline-block;
 }
 
@@ -50,10 +50,18 @@ body, h1, h2, h3, h4, h5 {
   margin: auto;
 }
 
+.box img, .mySlides img{
+  border-radius: 7px;
+}
+
+.slideshow-container {
+  top: 10px;
+}
+
 .navbar .search {
   float: right;
   text-decoration: none;
-  padding: 10px;
+  padding: 25px;
   display: inline;
 }
 
@@ -66,7 +74,7 @@ body, h1, h2, h3, h4, h5 {
 
 /*Slider */
 
-
+/*
 .testim {
   width: 100%;
   position: absolute;
@@ -195,7 +203,7 @@ body, h1, h2, h3, h4, h5 {
   width: 800px;
   height: 350px;
   margin: auto;
-  /*border-radius: 50%;*/
+  !*border-radius: 50%;*!
 }
 
 .testim .cont div h2 {
@@ -652,7 +660,7 @@ body, h1, h2, h3, h4, h5 {
     line-height: 25px;
   }
 
-}
+}*/
 
 
 * {box-sizing: border-box;}
