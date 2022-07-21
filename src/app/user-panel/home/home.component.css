@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body, h1, h2, h3, h4, h5 {
@@ -37,21 +38,28 @@ body, h1, h2, h3, h4, h5 {
   text-decoration: none;
   color: gray;
   font-family: sans-serif;
-  padding: 25px;
+  padding: 25px 10px;
   display: inline-block;
 }
 
-.navbar li a:hover{
+.navbar li a:hover {
+  color: coral;
+}
+
+.navbar li a i{
+  color: #aaaaaa;
+}
+
+.navbar li a i:hover{
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
   color: coral;
 }
 
 .container_h {
   width: 70%;
   margin: auto;
-}
-
-.box img, .mySlides img{
-  border-radius: 7px;
 }
 
 .slideshow-container {
@@ -61,7 +69,7 @@ body, h1, h2, h3, h4, h5 {
 .navbar .search {
   float: right;
   text-decoration: none;
-  padding: 25px;
+  padding: 25px 10px;
   display: inline;
 }
 
@@ -725,8 +733,41 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+.location {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .box {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 15px;
   grid-template-columns: repeat(5, minmax(70px, 1fr));
 }
+
+.mySlides img{
+  border-radius: 7px;
+}
+.box a img {
+  border-radius: 7px;
+  height: 350px;
+  width: 250px;
+}
+
+.box a img:hover{
+  border-radius: 10px;
+  height: 360px;
+  width: 260px;
+}
+
+#cartoon-fm , #anime-fm {
+  padding: 3px 10px;
+  color: #eeeeee;
+  background: coral;
+  border-radius: 5px 100px 5px 5px;
+
+}
+
+
+
+
