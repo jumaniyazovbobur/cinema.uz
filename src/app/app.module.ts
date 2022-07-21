@@ -10,7 +10,6 @@ import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {AdminComponent} from "./admin-panel/admin/admin.component";
 import { RegistrationComponent } from './shared-component/registration/registration.component';
-import { CaruselImageComponent } from './user-panel/home/carusel-image/carusel-image.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { CaruselImageComponent } from './user-panel/home/carusel-image/carusel-i
     LoginComponent,
     NotFoundComponent,
     AdminComponent,
-    CaruselImageComponent,
     AdminComponent,
     RegistrationComponent
   ],
