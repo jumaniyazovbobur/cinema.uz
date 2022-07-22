@@ -1,4 +1,7 @@
 import {Component, OnInit} from '@angular/core';
+import {LocalStorageSecurity} from "../../common/util/localStorageSecurity";
+import {LoginService} from "../../shared-component/login/login.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -7,7 +10,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public slideIndex = 1;
-  constructor() {
+  constructor(private loginService:LoginService,private router: Router) {
   }
 
   ngOnInit(): void {
@@ -18,6 +21,22 @@ export class HomeComponent implements OnInit {
   plusSlides(n: number) {
     this.slideIndex += n
     this.showSlides(n);
+  }
+
+  public login(){
+    const json = LocalStorageSecurity.getItem("userDetail");
+
+    if(json){
+      if (json.role === 'ROLE_ADMIN') {
+        this.router.navigate(['/admin']);
+      } else {
+        this.router.navigate(['']);
+      }
+
+    }else {
+      this.router.navigate(['/login']);
+    }
+
   }
 
   currentSlide(n: number) {
