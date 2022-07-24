@@ -12,6 +12,8 @@ import {AdminComponent} from "./admin-panel/admin/admin.component";
 import { RegistrationComponent } from './shared-component/registration/registration.component';
 import { KinoComponent } from './user-panel/kino/kino.component';
 import { SerialComponent } from './user-panel/serial/serial.component';
+import { MulticComponent } from './user-panel/multic/multic.component';
+import { AnimeComponent } from './user-panel/anime/anime.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SerialComponent } from './user-panel/serial/serial.component';
     AdminComponent,
     RegistrationComponent,
     KinoComponent,
-    SerialComponent
+    SerialComponent,
+    MulticComponent,
+    AnimeComponent
   ],
   imports: [
     BrowserModule,

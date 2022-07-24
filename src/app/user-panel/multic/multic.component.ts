@@ -4,30 +4,23 @@ import {Router} from "@angular/router";
 import {LocalStorageSecurity} from "../../common/util/localStorageSecurity";
 
 @Component({
-  selector: 'app-kino',
-  templateUrl: './kino.component.html',
-  styleUrls: ['./kino.component.css']
+  selector: 'app-multic',
+  templateUrl: './multic.component.html',
+  styleUrls: ['./multic.component.css']
 })
-export class KinoComponent implements OnInit {
+export class MulticComponent implements OnInit {
 
   constructor(private loginService:LoginService,private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  public login() {
-    const json = LocalStorageSecurity.getItem("userDetail");
+  toMultic() {
+    this.router.navigate(['/multic'])
+  }
 
-    if(json){
-      if (json.role === 'ROLE_ADMIN') {
-        this.router.navigate(['/admin']);
-      } else {
-        this.router.navigate(['']);
-      }
-
-    }else {
-      this.router.navigate(['/login']);
-    }
+  toHome() {
+    this.router.navigate([''])
   }
 
   toKino() {
@@ -40,16 +33,23 @@ export class KinoComponent implements OnInit {
     }
   }
 
-  toHome() {
-    this.router.navigate([''])
-  }
-
   toSerial() {
     this.router.navigate(['/serial'])
   }
 
-  toMultic() {
-    this.router.navigate(['/multic'])
+  login() {
+    const json = LocalStorageSecurity.getItem("userDetail");
+
+    if(json){
+      if (json.role === 'ROLE_ADMIN') {
+        this.router.navigate(['/admin']);
+      } else {
+        this.router.navigate(['']);
+      }
+
+    }else {
+      this.router.navigate(['/login']);
+    }
   }
 
   toAnime() {

@@ -78,6 +78,14 @@ export class HomeComponent implements OnInit {
   toSerial() {
     this.router.navigate(['/serial'])
   }
+
+  toMultic() {
+    this.router.navigate(['/multic'])
+  }
+
+  toAnime() {
+    this.router.navigate(['/anime'])
+  }
 }
 
 

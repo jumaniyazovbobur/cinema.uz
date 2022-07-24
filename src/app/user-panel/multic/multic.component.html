@@ -9,16 +9,16 @@
       <ul class="navbar">
 
         <li>
-          <a (click)="toKino()" href="/kino" class="active">Kinolar</a>
+          <a (click)="toKino()" href="/kino">Kinolar</a>
         </li>
         <li>
-          <a (click)="toSerial()" href="/serial">Seriallar</a>
+          <a (click)="toSerial()" href="/serial" >Seriallar</a>
         </li>
         <li>
           <a href="#">TV</a>
         </li>
         <li>
-          <a (click)="toMultic()" href="/multic">Multifilmlar</a>
+          <a (click)="toMultic()" href="/multic " class="active">Multifilmlar</a>
         </li>
         <li>
           <a href="#">O'zbek Kino</a>
@@ -32,7 +32,7 @@
           </form>
         </li>
         <li class="user-icon">
-          <a (click)="login()" ><i href="" class="fa-solid fa-user-large" ></i></a>
+          <a (click)="login()"><i href="" class="fa-solid fa-user-large"></i></a>
         </li>
       </ul>
 
@@ -41,39 +41,40 @@
 
   <div class="filter-search">
     <div class="container_h">
-      <div class="row"><table class="table">
-        <thead>
-        <tr class="filters">
-          <th>Janr
-            <input id="assigned-user-filter" class="form-control" type="text" >
-          </th>
-          <th>Shaxarlar
-            <input id="status-filter" class="form-control" type="text">
-          </th>
-          <th>Yil
-            <input id="milestone-filter" class="form-control" type="date">
-          </th>
-          <th>Category
-            <select id="priority-filter" class="form-control">
-              <option>Any</option>
-              <option>Low</option>
-              <option>Medium</option>
-              <option>High</option>
-              <option>Urgent</option>
-            </select>
-          </th>
-        </tr>
+      <div class="row">
+        <table class="table">
+          <thead>
+          <tr class="filters">
+            <th>Janr
+              <input id="assigned-user-filter" class="form-control" type="text">
+            </th>
+            <th>Shaxarlar
+              <input id="status-filter" class="form-control" type="text">
+            </th>
+            <th>Yil
+              <input id="milestone-filter" class="form-control" type="date">
+            </th>
+            <th>Category
+              <select id="priority-filter" class="form-control">
+                <option>Any</option>
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+                <option>Urgent</option>
+              </select>
+            </th>
+          </tr>
 
-        </thead>
-      </table>
+          </thead>
+        </table>
       </div>
 
     </div>
   </div>
 
-  <div class="kino-container">
+  <div class="multic-container">
     <div class="row movie-text-background">
-      <h1 class="movie-category-name">Films</h1>
+      <h1 class="movie-category-name">Multifilm</h1>
     </div>
 
     <div class="row m111">
@@ -279,6 +280,7 @@
 
 
 </div>
+
 <div class="movie-footer">
   <div class="container_h">
     <div class="footer-name">
@@ -292,3 +294,4 @@
     </div>
   </div>
 </div>
+

@@ -8,6 +8,8 @@ import {NotFoundComponent} from "./shared-component/not-found/not-found.componen
 import {RegistrationComponent} from "./shared-component/registration/registration.component";
 import {KinoComponent} from "./user-panel/kino/kino.component";
 import {SerialComponent} from "./user-panel/serial/serial.component";
+import {MulticComponent} from "./user-panel/multic/multic.component";
+import {AnimeComponent} from "./user-panel/anime/anime.component";
 
 const routes: Routes = [
   // {path: '', redirectTo: '/task', pathMatch: 'full'},
@@ -17,6 +19,8 @@ const routes: Routes = [
   {path: 'registration', component: RegistrationComponent},
   {path: 'kino', component: KinoComponent},
   {path: 'serial', component: SerialComponent},
+  {path: 'multic', component: MulticComponent},
+  {path: 'anime', component: AnimeComponent},
   {path: '**', component: NotFoundComponent}
 
 ]
