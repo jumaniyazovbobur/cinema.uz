@@ -8,15 +8,16 @@ import {Router} from "@angular/router";
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
+
 export class HomeComponent implements OnInit {
   public slideIndex = 1;
-  constructor(private loginService:LoginService,private router: Router) {
+  constructor(private loginService:LoginService,
+              private router: Router) {
   }
 
   ngOnInit(): void {
     this.showSlides(this.slideIndex);
   }
-
 
   plusSlides(n: number) {
     this.slideIndex += n
@@ -32,11 +33,19 @@ export class HomeComponent implements OnInit {
       } else {
         this.router.navigate(['']);
       }
-
     }else {
       this.router.navigate(['/login']);
     }
+  }
 
+  public toKino() {
+    const json = LocalStorageSecurity.getItem("userDetail");
+
+    if (json) {
+      this.router.navigate(['/kino']);
+    } else {
+      this.router.navigate([''])
+    }
   }
 
   currentSlide(n: number) {
@@ -65,7 +74,6 @@ export class HomeComponent implements OnInit {
     slides[this.slideIndex - 1].style.display = "block";
     dots[this.slideIndex - 1].className += " active";
   }
-
 }
 
 

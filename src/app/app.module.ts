@@ -10,6 +10,7 @@ import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {AdminComponent} from "./admin-panel/admin/admin.component";
 import { RegistrationComponent } from './shared-component/registration/registration.component';
+import { KinoComponent } from './user-panel/kino/kino.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RegistrationComponent } from './shared-component/registration/registrat
     NotFoundComponent,
     AdminComponent,
     AdminComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    KinoComponent
   ],
   imports: [
     BrowserModule,

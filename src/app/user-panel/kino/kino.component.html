@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-<div class="container-fluid">
 
+<div class="container-fluid">
   <div id="header">
     <div class="container_h">
       <h1>
-        <span class="logo">Cinerama</span>.uz
+        <span (click)="toHome()" class="logo">Cinerama</span>.uz
       </h1>
       <ul class="navbar">
 
@@ -12,7 +12,7 @@
           <a (click)="toKino()" href="/kino">Kinolar</a>
         </li>
         <li>
-          <a href="#">Seriallar</a>
+          <a href="">Seriallar</a>
         </li>
         <li>
           <a href="#">TV</a>
@@ -42,45 +42,175 @@
     </div>
   </div>
 
+  <div class="filter-search">
+    <div class="container_h">
+      <div class="row"><table class="table">
+        <thead>
+        <tr class="filters">
+          <th>Janr
+            <input id="assigned-user-filter" class="form-control" type="text" >
+          </th>
+          <th>Shaxarlar
+            <input id="status-filter" class="form-control" type="text">
+          </th>
+          <th>Yil
+            <input id="milestone-filter" class="form-control" type="date">
+          </th>
+          <th>Category
+            <select id="priority-filter" class="form-control">
+              <option>Any</option>
+              <option>Low</option>
+              <option>Medium</option>
+              <option>High</option>
+              <option>Urgent</option>
+            </select>
+          </th>
+        </tr>
 
-  <div>
-    <div class="slideshow-container">
-
-      <div class="mySlides myFade">
-        <div class="numbertext">1 / 3</div>
-        <img class="slider-img"
-             src="https://files.cinerama.uz/images/banners/2022/07/20/38385baf-db4e-48c9-824f-a74b67cfc703.png">
-        <div class="text">Caption Text</div>
+        </thead>
+      </table>
       </div>
 
-      <div class="mySlides myFade">
-        <div class="numbertext">2 / 3</div>
-        <img class="slider-img"
-             src="https://files.cinerama.uz/images/banners/2022/07/20/92284df4-38b7-49fe-a8ca-1e878ef9f9de.png">
-        <div class="text">Caption Two</div>
-      </div>
-
-      <div class="mySlides myFade">
-        <div class="numbertext">3 / 3</div>
-        <img class="slider-img"
-             src="https://files.cinerama.uz/images/banners/2022/07/20/92284df4-38b7-49fe-a8ca-1e878ef9f9de.png">
-        <div class="text">Caption Three</div>
-      </div>
-    </div>
-    <div style="text-align:center; position: relative">
-      <span class="dot" (click)="currentSlide(1)"></span>
-      <span class="dot" (click)="currentSlide(2)"></span>
-      <span class="dot" (click)="currentSlide(3)"></span>
     </div>
   </div>
 
-
-  <div class="movie-container">
+  <div class="kino-container">
     <div class="row movie-text-background">
       <h1 class="movie-category-name">Cartoon</h1>
     </div>
+
     <div class="row m111">
 
+      <div class="col-2 movie-card">
+        <div class="movie-card-image">
+          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+                          alt=""></a>
+        </div>
+        <div class="movie-card-bottom">
+          <p class="movie-card-title">Cамые сильные люди на Земле</p>
+          <p class="movie-card-detail"> 2018 / Документальный</p>
+        </div>
+      </div>
+
+      <div class="col-2 movie-card">
+        <div class="movie-card-image">
+          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+                          alt=""></a>
+        </div>
+        <div class="movie-card-bottom">
+          <p class="movie-card-title">Cамые сильные люди на Земле</p>
+          <p class="movie-card-detail"> 2018 / Документальный</p>
+        </div>
+      </div>
+
+      <div class="col-2 movie-card">
+        <div class="movie-card-image">
+          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+                          alt=""></a>
+        </div>
+        <div class="movie-card-bottom">
+          <p class="movie-card-title">Cамые сильные люди на Земле</p>
+          <p class="movie-card-detail"> 2018 / Документальный</p>
+        </div>
+      </div>
+
+      <div class="col-2 movie-card">
+        <div class="movie-card-image">
+          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+                          alt=""></a>
+        </div>
+        <div class="movie-card-bottom">
+          <p class="movie-card-title">Cамые сильные люди на Земле</p>
+          <p class="movie-card-detail"> 2018 / Документальный</p>
+        </div>
+      </div>
+
+      <div class="col-2 movie-card">
+        <div class="movie-card-image">
+          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+                          alt=""></a>
+        </div>
+        <div class="movie-card-bottom">
+          <p class="movie-card-title">Cамые сильные люди на Земле</p>
+          <p class="movie-card-detail"> 2018 / Документальный</p>
+        </div>
+      </div>
+
+      <div class="col-2 movie-card">
+        <div class="movie-card-image">
+          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+                          alt=""></a>
+        </div>
+        <div class="movie-card-bottom">
+          <p class="movie-card-title">Cамые сильные люди на Земле</p>
+          <p class="movie-card-detail"> 2018 / Документальный</p>
+        </div>
+      </div>
+      <div class="col-2 movie-card">
+        <div class="movie-card-image">
+          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+                          alt=""></a>
+        </div>
+        <div class="movie-card-bottom">
+          <p class="movie-card-title">Cамые сильные люди на Земле</p>
+          <p class="movie-card-detail"> 2018 / Документальный</p>
+        </div>
+      </div>
+
+      <div class="col-2 movie-card">
+        <div class="movie-card-image">
+          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+                          alt=""></a>
+        </div>
+        <div class="movie-card-bottom">
+          <p class="movie-card-title">Cамые сильные люди на Земле</p>
+          <p class="movie-card-detail"> 2018 / Документальный</p>
+        </div>
+      </div>
+
+      <div class="col-2 movie-card">
+        <div class="movie-card-image">
+          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+                          alt=""></a>
+        </div>
+        <div class="movie-card-bottom">
+          <p class="movie-card-title">Cамые сильные люди на Земле</p>
+          <p class="movie-card-detail"> 2018 / Документальный</p>
+        </div>
+      </div>
+
+      <div class="col-2 movie-card">
+        <div class="movie-card-image">
+          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+                          alt=""></a>
+        </div>
+        <div class="movie-card-bottom">
+          <p class="movie-card-title">Cамые сильные люди на Земле</p>
+          <p class="movie-card-detail"> 2018 / Документальный</p>
+        </div>
+      </div>
+
+      <div class="col-2 movie-card">
+        <div class="movie-card-image">
+          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+                          alt=""></a>
+        </div>
+        <div class="movie-card-bottom">
+          <p class="movie-card-title">Cамые сильные люди на Земле</p>
+          <p class="movie-card-detail"> 2018 / Документальный</p>
+        </div>
+      </div>
+
+      <div class="col-2 movie-card">
+        <div class="movie-card-image">
+          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
+                          alt=""></a>
+        </div>
+        <div class="movie-card-bottom">
+          <p class="movie-card-title">Cамые сильные люди на Земле</p>
+          <p class="movie-card-detail"> 2018 / Документальный</p>
+        </div>
+      </div>
       <div class="col-2 movie-card">
         <div class="movie-card-image">
           <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
@@ -151,93 +281,17 @@
   </div>
 
 
-  <div class="movie-container">
-    <div class="row movie-text-background">
-      <h1 class="movie-category-name">Anime</h1>
-    </div>
-    <div class="row m111">
-
-      <div class="col-2 movie-card">
-        <div class="movie-card-image">
-          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
-                          alt=""></a>
-        </div>
-        <div class="movie-card-bottom">
-          <p class="movie-card-title">Cамые сильные люди на Земле</p>
-          <p class="movie-card-detail"> 2018 / Документальный</p>
-        </div>
-      </div>
-
-      <div class="col-2 movie-card">
-        <div class="movie-card-image">
-          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
-                          alt=""></a>
-        </div>
-        <div class="movie-card-bottom">
-          <p class="movie-card-title">Cамые сильные люди на Земле</p>
-          <p class="movie-card-detail"> 2018 / Документальный</p>
-        </div>
-      </div>
-
-      <div class="col-2 movie-card">
-        <div class="movie-card-image">
-          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
-                          alt=""></a>
-        </div>
-        <div class="movie-card-bottom">
-          <p class="movie-card-title">Cамые сильные люди на Земле</p>
-          <p class="movie-card-detail"> 2018 / Документальный</p>
-        </div>
-      </div>
-
-      <div class="col-2 movie-card">
-        <div class="movie-card-image">
-          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
-                          alt=""></a>
-        </div>
-        <div class="movie-card-bottom">
-          <p class="movie-card-title">Cамые сильные люди на Земле</p>
-          <p class="movie-card-detail"> 2018 / Документальный</p>
-        </div>
-      </div>
-
-      <div class="col-2 movie-card">
-        <div class="movie-card-image">
-          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
-                          alt=""></a>
-        </div>
-        <div class="movie-card-bottom">
-          <p class="movie-card-title">Cамые сильные люди на Земле</p>
-          <p class="movie-card-detail"> 2018 / Документальный</p>
-        </div>
-      </div>
-
-      <div class="col-2 movie-card">
-        <div class="movie-card-image">
-          <a href=""><img src="https://github.com/carlosavilae/Netflix-Clone/blob/master/img/p1.PNG?raw=true"
-                          alt=""></a>
-        </div>
-        <div class="movie-card-bottom">
-          <p class="movie-card-title">Cамые сильные люди на Земле</p>
-          <p class="movie-card-detail"> 2018 / Документальный</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="movie-footer">
-    <div class="container_h">
-      <div class="footer-name">
+</div>
+<div class="movie-footer">
+  <div class="container_h">
+    <div class="footer-name">
       <h1>BigMan Corporation</h1>
-      </div>
-      <div class="footer-info">
-        <h1>Our accounts</h1>
-      </div>
-      <div class="footer-contact">
-        <h1>Our web contact</h1>
-      </div>
+    </div>
+    <div class="footer-info">
+      <h1>Our accounts</h1>
+    </div>
+    <div class="footer-contact">
+      <h1>Our web contact</h1>
     </div>
   </div>
-
 </div>
