@@ -11,7 +11,10 @@ import {LocalStorageSecurity} from "../../common/util/localStorageSecurity";
 export class KinoComponent implements OnInit {
 
   constructor(private loginService:LoginService,private router: Router) { }
-
+  genre = '';
+  country = '';
+  year = '';
+  category = '';
   ngOnInit(): void {
   }
 
@@ -54,5 +57,9 @@ export class KinoComponent implements OnInit {
 
   toAnime() {
     this.router.navigate(['/anime'])
+  }
+
+  toUzKino() {
+    this.router.navigate(['/uz-kino'])
   }
 }

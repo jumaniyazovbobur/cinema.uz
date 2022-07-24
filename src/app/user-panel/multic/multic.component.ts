@@ -9,7 +9,10 @@ import {LocalStorageSecurity} from "../../common/util/localStorageSecurity";
   styleUrls: ['./multic.component.css']
 })
 export class MulticComponent implements OnInit {
-
+  genre = '';
+  country = '';
+  year = '';
+  category = '';
   constructor(private loginService:LoginService,private router: Router) { }
 
   ngOnInit(): void {
@@ -54,5 +57,9 @@ export class MulticComponent implements OnInit {
 
   toAnime() {
     this.router.navigate(['/anime'])
+  }
+
+  toUzKino() {
+    this.router.navigate(['/uz-kino'])
   }
 }

@@ -182,7 +182,16 @@ body, h1, h2, h3, h4, h5 {
   color: coral;
 }
 
-.filters th input, .filters th select {
+.filters th input, .filters th select,  .search-bt {
   font-size: 20px;
   height: 40px;
+}
+
+.search-bt {
+  margin: 0;
+  border-radius: 4px;
+  background-color: coral;
+  width: 100px;
+  display: block;
+  justify-content: center;
 }

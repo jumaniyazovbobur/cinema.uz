@@ -14,6 +14,7 @@ import { KinoComponent } from './user-panel/kino/kino.component';
 import { SerialComponent } from './user-panel/serial/serial.component';
 import { MulticComponent } from './user-panel/multic/multic.component';
 import { AnimeComponent } from './user-panel/anime/anime.component';
+import { UzKinoComponent } from './user-panel/uz-kino/uz-kino.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AnimeComponent } from './user-panel/anime/anime.component';
     KinoComponent,
     SerialComponent,
     MulticComponent,
-    AnimeComponent
+    AnimeComponent,
+    UzKinoComponent
   ],
   imports: [
     BrowserModule,

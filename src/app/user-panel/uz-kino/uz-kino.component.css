@@ -115,7 +115,7 @@ body, h1, h2, h3, h4, h5 {
   object-fit: fill;
 }
 
-.serial-container {
+.uz-kino-container {
   width: 85%;
   margin: auto;
 }
@@ -182,7 +182,7 @@ body, h1, h2, h3, h4, h5 {
   color: coral;
 }
 
-.filters th input, .filters th select,  .search-bt {
+.filters th input, .filters th select, .search-bt {
   font-size: 20px;
   height: 40px;
 }
@@ -195,3 +195,4 @@ body, h1, h2, h3, h4, h5 {
   display: block;
   justify-content: center;
 }
+

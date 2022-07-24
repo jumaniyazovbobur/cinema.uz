@@ -86,6 +86,10 @@ export class HomeComponent implements OnInit {
   toAnime() {
     this.router.navigate(['/anime'])
   }
+
+  toUzKino() {
+    this.router.navigate(['/uz-kino'])
+  }
 }
 
 

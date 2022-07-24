@@ -8,6 +8,7 @@
         <span (click)="toHome()" class="logo">Cinerama</span>.uz
       </h1>
       <ul class="navbar">
+
         <li>
           <a (click)="toKino()" href="/kino">Kinolar</a>
         </li>
@@ -18,10 +19,10 @@
           <a (click)="toMultic()" href="/multic">Multifilmlar</a>
         </li>
         <li>
-          <a (click)="toUzKino()" href="/uz-kino">O'zbek Kino</a>
+          <a (click)="toUzKino()" href="/uz-kino" class="active">O'zbek Kino</a>
         </li>
         <li>
-          <a (click)="toAnime()" href="/anime" class="active">Anime</a>
+          <a (click)="toAnime()" href="/anime">Anime</a>
         </li>
         <li>
           <form class="search" action="search.php">
@@ -71,10 +72,10 @@
 
     </div>
   </div>
-  <!--Anime -->
-  <div class="anime-container">
+  <!--Uz Kino-->
+  <div class="uz-kino-container">
     <div class="row movie-text-background">
-      <h1 class="movie-category-name">Anime</h1>
+      <h1 class="movie-category-name">O'zbek Kino</h1>
     </div>
 
     <div class="row m111">
@@ -292,3 +293,4 @@
     </div>
   </div>
 </div>
+

@@ -9,7 +9,10 @@ import {Router} from "@angular/router";
   styleUrls: ['./serial.component.css']
 })
 export class SerialComponent implements OnInit {
-
+  genre = '';
+  country = '';
+  year = '';
+  category = '';
   constructor(private loginService:LoginService,private router: Router) { }
 
   ngOnInit(): void {
@@ -54,5 +57,9 @@ export class SerialComponent implements OnInit {
 
   toAnime() {
     this.router.navigate(['/anime'])
+  }
+
+  toUzKino() {
+    this.router.navigate(['/uz-kino'])
   }
 }

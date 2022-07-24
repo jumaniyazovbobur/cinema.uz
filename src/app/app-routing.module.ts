@@ -10,6 +10,7 @@ import {KinoComponent} from "./user-panel/kino/kino.component";
 import {SerialComponent} from "./user-panel/serial/serial.component";
 import {MulticComponent} from "./user-panel/multic/multic.component";
 import {AnimeComponent} from "./user-panel/anime/anime.component";
+import {UzKinoComponent} from "./user-panel/uz-kino/uz-kino.component";
 
 const routes: Routes = [
   // {path: '', redirectTo: '/task', pathMatch: 'full'},
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'serial', component: SerialComponent},
   {path: 'multic', component: MulticComponent},
   {path: 'anime', component: AnimeComponent},
+  {path: 'uz-kino', component: UzKinoComponent},
   {path: '**', component: NotFoundComponent}
 
 ]

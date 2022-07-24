@@ -14,7 +14,7 @@ body, h1, h2, h3, h4, h5 {
   min-height: 1000px;
 }
 
-#header{
+#header {
   background-color: #000000;
 }
 
@@ -86,6 +86,8 @@ body, h1, h2, h3, h4, h5 {
   }
 }
 
+/* Movie */
+
 .movie-card {
   border: #17181c;
   width: 260px;
@@ -97,7 +99,6 @@ body, h1, h2, h3, h4, h5 {
 }
 
 
-/* Movie */
 .movie-card-image img {
   width: 95%;
   height: 100%;
@@ -106,7 +107,6 @@ body, h1, h2, h3, h4, h5 {
   object-fit: fill;
 }
 
-/* Movie */
 .movie-card-image img:hover {
   width: 98%;
   height: 100%;
@@ -130,6 +130,40 @@ body, h1, h2, h3, h4, h5 {
   flex-wrap: wrap;
 }
 
+
+@keyframes example {
+  0% {
+    background-color: coral;
+    border-radius: 10px 10px 10px 10px;
+    width: 20%
+  }
+  25% {
+    background-color: chocolate;
+    border-radius: 10px 10px 100px 10px;
+    width: 40%
+  }
+  50% {
+    background-color: coral;
+    border-radius: 10px 10px 10px 100px;
+    width: 60%
+  }
+  75% {
+    background-color: chocolate;
+    border-radius: 10px 100px 10px 10px;
+    width: 80%
+  }
+  100% {
+    background-color: coral;
+    border-radius: 10px 10px 10px 100px;
+    width: 100%
+  }
+}
+
+
+.movie-text-background h1 {
+  padding-left: 15px;
+}
+
 .movie-card-bottom {
   margin-bottom: 5px;
   margin-left: 20px;
@@ -138,20 +172,8 @@ body, h1, h2, h3, h4, h5 {
 
 .movie-text-background {
   background-color: coral;
-  border-radius: 10px 100px 10px  10px;
+  border-radius: 10px 100px 10px 10px;
   animation: example 5s infinite;
-}
-
-@keyframes example {
-  0%  {background-color:coral; border-radius: 10px 10px 10px 10px; width: 20%}
-  25%  {background-color:chocolate; border-radius: 10px 10px 100px 10px; width: 40%}
-  50%  {background-color:coral; border-radius: 10px 10px 10px 100px; width: 60%}
-  75%  {background-color:chocolate; border-radius: 10px 100px 10px 10px; width: 80%}
-  100%  {background-color:coral; border-radius: 10px 10px 10px 100px; width: 100%}
-}
-
-.movie-text-background h1 {
-  padding-left: 15px;
 }
 
 .movie-footer {
@@ -182,7 +204,16 @@ body, h1, h2, h3, h4, h5 {
   color: coral;
 }
 
-.filters th input, .filters th select {
+.filters th input, .filters th select, .search-bt {
   font-size: 20px;
   height: 40px;
+}
+
+.search-bt {
+  margin: 0;
+  border-radius: 4px;
+  background-color: coral;
+  width: 100px;
+  display: block;
+  justify-content: center;
 }
