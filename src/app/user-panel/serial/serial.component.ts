@@ -1,21 +1,21 @@
 import { Component, OnInit } from '@angular/core';
+import {LocalStorageSecurity} from "../../common/util/localStorageSecurity";
 import {LoginService} from "../../shared-component/login/login.service";
 import {Router} from "@angular/router";
-import {LocalStorageSecurity} from "../../common/util/localStorageSecurity";
 
 @Component({
-  selector: 'app-kino',
-  templateUrl: './kino.component.html',
-  styleUrls: ['./kino.component.css']
+  selector: 'app-serial',
+  templateUrl: './serial.component.html',
+  styleUrls: ['./serial.component.css']
 })
-export class KinoComponent implements OnInit {
+export class SerialComponent implements OnInit {
 
   constructor(private loginService:LoginService,private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  public login() {
+  login() {
     const json = LocalStorageSecurity.getItem("userDetail");
 
     if(json){
@@ -30,6 +30,10 @@ export class KinoComponent implements OnInit {
     }
   }
 
+  toHome() {
+    this.router.navigate([''])
+  }
+
   toKino() {
     const json = LocalStorageSecurity.getItem("userDetail");
 
@@ -40,12 +44,7 @@ export class KinoComponent implements OnInit {
     }
   }
 
-  toHome() {
-    this.router.navigate([''])
-  }
-
   toSerial() {
     this.router.navigate(['/serial'])
   }
-
 }

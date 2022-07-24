@@ -11,6 +11,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {AdminComponent} from "./admin-panel/admin/admin.component";
 import { RegistrationComponent } from './shared-component/registration/registration.component';
 import { KinoComponent } from './user-panel/kino/kino.component';
+import { SerialComponent } from './user-panel/serial/serial.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { KinoComponent } from './user-panel/kino/kino.component';
     AdminComponent,
     AdminComponent,
     RegistrationComponent,
-    KinoComponent
+    KinoComponent,
+    SerialComponent
   ],
   imports: [
     BrowserModule,

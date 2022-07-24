@@ -75,7 +75,8 @@ body, h1, h2, h3, h4, h5 {
 }
 
 .active {
-  background-color: #8f0505;
+  background-color: coral;
+  color: black;
 }
 
 /* On smaller screens, decrease text size */
